@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hizmetlerimiz - Batman Beyaz Eşya Tamircisi</title>
+  <meta name="description" content="Batman'da çamaşır makinesi, bulaşık makinesi, buzdolabı, derin dondurucu, fırın, şofben, klima ve kombi tamiri hizmetlerimizin detayları." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hizmetlerimiz - Batman Beyaz Eşya Tamir" />
+  <meta property="og:description" content="Batman'da beyaz eşya tamiri hizmetlerimizin detaylı bilgi sayfası." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Batman Beyaz Eşya Tamiri Hizmetleri","description":"Batman'da sunulan tüm beyaz eşya tamir hizmetleri","itemListElement":[{"@type":"ListItem","position":1,"name":"Çamaşır Makinesi Tamiri"},{"@type":"ListItem","position":2,"name":"Bulaşık Makinesi Tamiri"},{"@type":"ListItem","position":3,"name":"Buzdolabı Tamiri"},{"@type":"ListItem","position":4,"name":"Derin Dondurucu Tamiri"},{"@type":"ListItem","position":5,"name":"Fırın Tamiri"},{"@type":"ListItem","position":6,"name":"Şofben Tamiri"},{"@type":"ListItem","position":7,"name":"Klima Tamiri"},{"@type":"ListItem","position":8,"name":"Kombi Tamiri"}]}
+</script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+          <div class="logo-text">
+            <strong>Batman Beyaz Eşya</strong>
+            <span>Teknik Servis</span>
+          </div>
+        </a>
+      </div>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <div class="nav-dropdown">
+          <a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+          <div class="dropdown-menu">
+            <a href="#camasir"><i class="fas fa-drum"></i>Çamaşır Makinesi</a>
+            <a href="#bulasik"><i class="fas fa-soap"></i>Bulaşık Makinesi</a>
+            <a href="#buzdolabi"><i class="fas fa-temperature-low"></i>Buzdolabı</a>
+            <a href="#dondurucu"><i class="fas fa-snowflake"></i>Derin Dondurucu</a>
+            <a href="#firin"><i class="fas fa-fire"></i>Fırın</a>
+            <a href="#sofben"><i class="fas fa-tint"></i>Şofben</a>
+            <a href="#klima"><i class="fas fa-wind"></i>Klima</a>
+            <a href="#kombi"><i class="fas fa-cog"></i>Kombi</a>
+          </div>
+        </div>
+        <a href="blog.html">Blog</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="iletisim.html">İletişim</a>
+      </nav>
+      <a href="tel:+905374471639" class="header-cta">
+        <i class="fas fa-phone"></i> <span>0537 447 16 39</span>
+      </a>
+      <button class="hamburger" onclick="toggleMobileNav()"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" onclick="toggleMobileNav()"><i class="fas fa-times"></i></button>
+    <a href="index.html" onclick="toggleMobileNav()">Ana Sayfa</a>
+    <a href="hizmetlerimiz.html" onclick="toggleMobileNav()">Hizmetlerimiz</a>
+    <a href="hizmet-bolgelerimiz.html" onclick="toggleMobileNav()">Hizmet Bölgelerimiz</a>
+    <a href="hakkimizda.html" onclick="toggleMobileNav()">Hakkımızda</a>
+    <a href="blog.html" onclick="toggleMobileNav()">Blog</a>
+    <a href="iletisim.html" onclick="toggleMobileNav()">İletişim</a>
+    <a href="tel:+905374471639" style="color:var(--primary);margin-top:18px;"><i class="fas fa-phone" style="margin-right:9px"></i>0537 447 16 39</a>
+  </div>
+
+  <div class="page-hero">
+    <h1>Hizmetlerimiz</h1>
+    <p>Batman'da tüm beyaz eşya marka ve modellerinde profesyonel tamir hizmeti sunuyoruz.</p>
+  </div>
+
+  <nav class="breadcrumb">
+    <a href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a><i class="fas fa-chevron-right"></i> Hizmetlerimiz
+  </nav>
+
+  <section class="services-section" style="padding-top:0">
+    <div class="container section-inner">
+      <div class="intro-banner">
+        <h2>Her Beyaz Eşya İçin Uzman Çözüm</h2>
+        <p>Deneyimli teknisyen kadromuzla tüm markalarda yerinde hizmet. Acil arıza durumlarında 30-60 dakika içinde başvurunuz.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card anim" id="camasir">
+          <div class="service-icon">🫧</div>
+          <h3>Çamaşır Makinesi Tamiri</h3>
+          <div class="service-tags">
+            <span class="tag">Su Almıyor</span>
+            <span class="tag">Su Boşaltmıyor</span>
+            <span class="tag">Program Hatası</span>
+            <span class="tag">Pompa Arızası</span>
+            <span class="tag">Kapı Kilidi</span>
+            <span class="tag">Ses Yapıyor</span>
+            <span class="tag">Çamaşırlar Temizlenmiyor</span>
+            <span class="tag">Çalışmıyor</span>
+          </div>
+          <p>Batman'da çamaşır makinesi arızanıza hızlı ve kalıcı çözüm sunuyoruz. Günlük hayatımızın vazgeçilmezi olan çamaşır makineleri sürekli kullanım nedeniyle zamanla çeşitli arızalar verebilir. Bizler Batman Merkez Servis olarak ev ve iş yerlerinizde bulunan her marka çamaşır makinelerinizin bakımını, onarımını ve tamirini gerçekleştirmekteyiz. Yerinde servis, orijinal yedek parça ve deneyimli teknisyen garantisi ile hizmet veriyoruz.</p>
+          <div style="margin-top:16px;padding:16px;background:var(--bg-warm);border-radius:var(--radius);">
+            <h4 style="font-size:0.95rem;margin-bottom:10px;color:var(--primary);">Sık Karşılaşılan Arızalar</h4>
+            <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin:0;padding-left:18px;">
+              <li><strong>Çamaşır Makinesi Çalışmıyor:</strong> Priz, kablo, su bağlantısı veya elektronik kart sorunları</li>
+              <li><strong>Su Almıyor:</strong> Kapı kilidi, su seviye sensörü, musluk filtresi tıkanıklığı</li>
+              <li><strong>Su Boşaltmıyor:</strong> Pompa arızası, tıkanıklık veya elektronik kart sorunu</li>
+              <li><strong>Çamaşırlar Temizlenmiyor:</strong> Tuz bitimi, pervane tıkanıklığı, deterjan dağıtıcı sorunu</li>
+              <li><strong>Ses Yapıyor:</strong> Rulman aşınması, yabancı cisim veya pompa sorunu</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Arçelik</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Beko</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Vestel</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Samsung</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">LG</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Bosch</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Siemens</span>
+          </div>
+          <button class="seo-toggle-btn" onclick="toggleSeoSection('camasir-seo')">📋 Tüm marka ve hizmet etiketlerini gör ▼</button>
+          <div class="service-seo-section" id="camasir-seo">
+            <div class="seo-section-title"><i class="fas fa-tags"></i> Çamaşır Makinesi Arama Etiketleri </div>
+            <div class="seo-tags-container">
+              <span class="seo-tag">Batman 19 Mayıs Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Bağlar Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Kayapınar Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yenişehir Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Raman Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Güneykent Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Akyürek Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Aydınlıkevler Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Bahçelievler Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Bayındır Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Belde Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Beşevler Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Cudi Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Cumhuriyet Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Çamlıca Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Çamlıtepe Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Çarşı Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Çay Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Fatih Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Gap Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Girbereşik Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Gültepe Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Hilal Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Huzur Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Hürriyet Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman İluh Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman İrmi Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Kardelen Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Karşıyaka Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Kısmet Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Korik Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Kültür Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Meydan Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Pazaryeri Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Petrol Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Petrolkent Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Pınarbaşı Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Sağlık Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Segirkan Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Seyitler Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Seyrantepe Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Site Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Şafak Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Şirin Evler Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Tilmerç Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yeni Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yeniköy Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yenimahalle Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yeşiltepe Çamaşır Makinesi Servisi</span>
+              <span class="seo-tag">Batman Ziyagökalp Çamaşır Makinesi Servisi</span>
+            </div>
+            <button class="seo-toggle-btn secondary" onclick="toggleSeoSection('camasir-seo')">Kapat ▲</button>
+          </div>
+          <a href="camasir-tamiri-batman.html" class="service-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card anim anim-delay-1" id="bulasik">
+          <div class="service-icon">🧽</div>
+          <h3>Bulaşık Makinesi Tamiri</h3>
+          <div class="service-tags">
+            <span class="tag">Su Almıyor</span>
+            <span class="tag">Isıtmıyor</span>
+            <span class="tag">Su Kaçağı</span>
+            <span class="tag">Program Hatası</span>
+            <span class="tag">Tahliye Yapmıyor</span>
+            <span class="tag">Kurutmıyor</span>
+            <span class="tag">Ses Yapıyor</span>
+            <span class="tag">Bulaşıklar Temizlenmiyor</span>
+          </div>
+          <p>Bulaşık makinenizde arıza mı var? Batman'da tüm marka bulaşık makinesi tamiri hizmetimiz mevcuttur. Bulaşık makineleri günlük hayatımızı kolaylaştıran önemli ev aletleridir. Sürekli kullanım nedeniyle zamanla çeşitli arızalar oluşabilir. Bizler ev ve iş yerlerinizde bulunan bulaşık makinelerinizin tüm arıza ve bakım işlemlerini gerçekleştirmekteyiz. Her marka ve modelde uzman teknisyen kadromuzla yerinde tamir hizmeti sunuyoruz.</p>
+          <div style="margin-top:16px;padding:16px;background:var(--bg-warm);border-radius:var(--radius);">
+            <h4 style="font-size:0.95rem;margin-bottom:10px;color:var(--primary);">Sık Karşılaşılan Arızalar</h4>
+            <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin:0;padding-left:18px;">
+              <li><strong>Su Almıyor:</strong> Su giriş valfi arızası, su seviye sensörü veya elektronik kart sorunu</li>
+              <li><strong>Isıtmıyor:</strong> Isıtıcı rezistans arızası, termostat veya ısı sensörü problemi</li>
+              <li><strong>Su Kaçağı:</strong> Conta arızası, boru bağlantıları veya pompa sızıntısı</li>
+              <li><strong>Tahliye Yapmıyor:</strong> Tahliye pompası tıkanıklığı veya arızası</li>
+              <li><strong>Bulaşıklar Temizlenmiyor:</strong> Püskürtme kolları tıkanıklığı, filtre sorunu veya deterjan dağıtıcı arızası</li>
+              <li><strong>Kurutmıyor:</strong> Fan motoru, ısıtıcı veya kondensör sorunu</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Arçelik</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Beko</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Vestel</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Samsung</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">LG</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Bosch</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Siemens</span>
+          </div>
+          <button class="seo-toggle-btn" onclick="toggleSeoSection('bulasik-seo')">📋 Tüm marka ve hizmet etiketlerini gör ▼</button>
+          <div class="service-seo-section" id="bulasik-seo">
+            <div class="seo-section-title"><i class="fas fa-tags"></i> Bulaşık Makinesi Arama Etiketleri </div>
+            <div class="seo-tags-container">
+              <span class="seo-tag">Batman 19 Mayıs Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Bağlar Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Kayapınar Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yenişehir Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Raman Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Güneykent Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Akyürek Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Aydınlıkevler Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Bahçelievler Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Bayındır Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Belde Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Beşevler Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Cudi Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Cumhuriyet Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Çamlıca Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Çamlıtepe Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Çarşı Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Çay Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Fatih Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Gap Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Girbereşik Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Gültepe Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Hilal Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Huzur Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Hürriyet Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman İluh Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman İrmi Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Kardelen Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Karşıyaka Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Kısmet Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Korik Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Kültür Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Meydan Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Pazaryeri Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Petrol Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Petrolkent Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Pınarbaşı Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Sağlık Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Segirkan Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Seyitler Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Seyrantepe Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Site Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Şafak Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Şirin Evler Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Tilmerç Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yeni Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yeniköy Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yenimahalle Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Yeşiltepe Bulaşık Makinesi Servisi</span>
+              <span class="seo-tag">Batman Ziyagökalp Bulaşık Makinesi Servisi</span>
+            </div>
+            <button class="seo-toggle-btn secondary" onclick="toggleSeoSection('bulasik-seo')">Kapat ▲</button>
+          </div>
+          <a href="bulasik-makinesi-tamiri-batman.html" class="service-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card anim anim-delay-2" id="buzdolabi">
+          <div class="service-icon">🧊</div>
+          <h3>Buzdolabı Tamiri</h3>
+          <div class="service-tags">
+            <span class="tag">Soğutmuyor</span>
+            <span class="tag">Motor Çalışmıyor</span>
+            <span class="tag">Gaz Kaçağı</span>
+            <span class="tag">Buz Yapıyor</span>
+            <span class="tag">Ses Yapıyor</span>
+            <span class="tag">Kapı Contası</span>
+            <span class="tag">Termostat Arızası</span>
+            <span class="tag">Lamba Yanmıyor</span>
+          </div>
+          <p>Buzdolabınız yeterince soğutmuyor, ses yapıyor veya buz tutuyorsa uzman ekibimiz en kısa sürede adresinize ulaşır. Buzdolapları gıdalarımızı muhafaza eden en önemli ev aletlerindendir. Arıza durumunda gıda kaybı yaşanmaması için hızlı müdahale çok önemlidir. Motor değişimi, gaz dolumu, termostat ve kapı contası tamiri dahil tüm arızalara profesyonel çözüm sunuyoruz.</p>
+          <div style="margin-top:16px;padding:16px;background:var(--bg-warm);border-radius:var(--radius);">
+            <h4 style="font-size:0.95rem;margin-bottom:10px;color:var(--primary);">Sık Karşılaşılan Arızalar</h4>
+            <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin:0;padding-left:18px;">
+              <li><strong>Soğutmıyor:</strong> Kompresör arızası, gaz eksikliği veya fan motoru sorunu</li>
+              <li><strong>Motor Çalışmıyor:</strong> Röle arızası, motor sargıları veya elektronik kart problemi</li>
+              <li><strong>Buz Yapıyor:</strong> Kapı contası arızası, buz çözme sistemi sorunu veya sensör arızası</li>
+              <li><strong>Ses Yapıyor:</strong> Kompresör sesleri, fan motoru gürültüsü veya boru titresimi</li>
+              <li><strong>Elektronik Arızalar:</strong> Termostat, kontrol paneli veya sensör arızaları</li>
+              <li><strong>Su Akıyor:</strong> Buz çözme suyu tahliye tıkanıklığı veya boru arızası</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Arçelik</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Beko</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Vestel</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Samsung</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">LG</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Bosch</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Siemens</span>
+          </div>
+          <button class="seo-toggle-btn" onclick="toggleSeoSection('buzdolabi-seo')">📋 Tüm marka ve hizmet etiketlerini gör ▼</button>
+          <div class="service-seo-section" id="buzdolabi-seo">
+            <div class="seo-section-title"><i class="fas fa-tags"></i> Buzdolabı Arama Etiketleri </div>
+            <div class="seo-tags-container">
+              <span class="seo-tag">Batman 19 Mayıs Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Bağlar Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Kayapınar Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Yenişehir Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Raman Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Güneykent Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Akyürek Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Aydınlıkevler Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Bahçelievler Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Bayındır Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Belde Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Beşevler Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Cudi Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Cumhuriyet Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Çamlıca Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Çamlıtepe Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Çarşı Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Çay Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Fatih Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Gap Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Girbereşik Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Gültepe Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Hilal Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Huzur Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Hürriyet Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman İluh Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman İrmi Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Kardelen Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Karşıyaka Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Kısmet Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Korik Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Kültür Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Meydan Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Pazaryeri Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Petrol Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Petrolkent Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Pınarbaşı Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Sağlık Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Segirkan Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Seyitler Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Seyrantepe Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Site Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Şafak Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Şirin Evler Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Tilmerç Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Yeni Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Yeniköy Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Yenimahalle Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Yeşiltepe Buzdolabı Servisi</span>
+              <span class="seo-tag">Batman Ziyagökalp Buzdolabı Servisi</span>
+            </div>
+            <button class="seo-toggle-btn secondary" onclick="toggleSeoSection('buzdolabi-seo')">Kapat ▲</button>
+          </div>
+          <a href="buzdolabi-tamiri-batman.html" class="service-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card anim anim-delay-3" id="dondurucu">
+          <div class="service-icon">❄️</div>
+          <h3>Derin Dondurucu Tamiri</h3>
+          <div class="service-tags">
+            <span class="tag">Dondurmuyor</span>
+            <span class="tag">Kompresör Arızası</span>
+            <span class="tag">Gaz Dolumu</span>
+            <span class="tag">Kapak Contası</span>
+            <span class="tag">Ses Yapıyor</span>
+            <span class="tag">Termostat</span>
+            <span class="tag">Otomatik Çözme</span>
+            <span class="tag">Aşırı Buz</span>
+          </div>
+          <p>Derin dondurucunuz çalışmıyor mu veya yeterince dondurmuyor mu? Kompresör arızası, gaz dolumu eksikliği ve soğutma sistemi problemleri konusunda Batman'ın en tecrübeli ekibimiz hızlı çözüm sunuyor. Derin dondurucular gıdalarımızı uzun süre muhafaza etmek için kritik öneme sahiptir. Arıza durumunda hızlı müdahale ile gıda kaybının önüne geçiyoruz.</p>
+          <div style="margin-top:16px;padding:16px;background:var(--bg-warm);border-radius:var(--radius);">
+            <h4 style="font-size:0.95rem;margin-bottom:10px;color:var(--primary);">Sık Karşılaşılan Arızalar</h4>
+            <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin:0;padding-left:18px;">
+              <li><strong>Dondurmuyor:</strong> Kompresör arızası, gaz eksikliği veya termostat sorunu</li>
+              <li><strong>Kompresör Çalışmıyor:</strong> Röle, motor veya elektronik kart arızası</li>
+              <li><strong>Çok Buz Yapıyor:</strong> Kapı contası arızası veya otomatik çözme sistemi sorunu</li>
+              <li><strong>Ses Yapıyor:</strong> Kompresör gürültüsü, fan sesi veya boru titresimi</li>
+              <li><strong>Sürekli Çalışıyor:</strong> Kapı contası, gaz kaçağı veya sensör arızası</li>
+              <li><strong>Elektronik Arızalar:</strong> Termostat, kontrol paneli veya sensör problemleri</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Arçelik</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Beko</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Vestel</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Samsung</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">LG</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Bosch</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Siemens</span>
+          </div>
+          <button class="seo-toggle-btn" onclick="toggleSeoSection('dondurucu-seo')">📋 Tüm marka ve hizmet etiketlerini gör ▼</button>
+          <div class="service-seo-section" id="dondurucu-seo">
+            <div class="seo-section-title"><i class="fas fa-tags"></i> Derin Dondurucu Arama Etiketleri </div>
+            <div class="seo-tags-container">
+              <span class="seo-tag">Batman 19 Mayıs Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Bağlar Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Kayapınar Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Yenişehir Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Raman Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Güneykent Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Akyürek Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Aydınlıkevler Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Bahçelievler Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Bayındır Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Belde Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Beşevler Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Cudi Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Cumhuriyet Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Çamlıca Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Çamlıtepe Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Çarşı Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Çay Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Fatih Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Gap Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Girbereşik Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Gültepe Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Hilal Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Huzur Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Hürriyet Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman İluh Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman İrmi Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Kardelen Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Karşıyaka Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Kısmet Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Korik Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Kültür Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Meydan Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Pazaryeri Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Petrol Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Petrolkent Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Pınarbaşı Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Sağlık Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Segirkan Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Seyitler Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Seyrantepe Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Site Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Şafak Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Şirin Evler Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Tilmerç Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Yeni Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Yeniköy Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Yenimahalle Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Yeşiltepe Derin Dondurucu Servisi</span>
+              <span class="seo-tag">Batman Ziyagökalp Derin Dondurucu Servisi</span>
+            </div>
+            <button class="seo-toggle-btn secondary" onclick="toggleSeoSection('dondurucu-seo')">Kapat ▲</button>
+          </div>
+          <a href="derin-dondurucu-tamiri-batman.html" class="service-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card anim" id="firin">
+          <div class="service-icon">🍕</div>
+          <h3>Fırın Tamiri</h3>
+          <div class="service-tags">
+            <span class="tag">Isıtmıyor</span>
+            <span class="tag">Rezistans Arızası</span>
+            <span class="tag">Termostat</span>
+            <span class="tag">Fan Arızası</span>
+            <span class="tag">Kapı Menteşesi</span>
+            <span class="tag">Ateşleme Sistemi</span>
+            <span class="tag">Program Hatası</span>
+            <span class="tag">Lamba Yanmıyor</span>
+          </div>
+          <p>Elektrikli ve gazlı fırın arızasında profesyonel tamir hizmeti sunuyoruz. Fırınlar mutfağımızın en çok kullanılan aletlerinden biridir. Yemek pişirme, pasta yapma ve kurutma gibi birçok işlevde kullandığımız fırınlarda oluşan arızalar günlük hayatımızı olumsuz etkiler. Isıtma elemanı (rezistans), termostat, fan motoru ve kapı menteşesi değişimi dahil tüm bakım ve onarım işlemlerini gerçekleştiriyoruz.</p>
+          <div style="margin-top:16px;padding:16px;background:var(--bg-warm);border-radius:var(--radius);">
+            <h4 style="font-size:0.95rem;margin-bottom:10px;color:var(--primary);">Sık Karşılaşılan Arızalar</h4>
+            <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin:0;padding-left:18px;">
+              <li><strong>Isıtmıyor:</strong> Rezistans arızası, termostat sorunu veya elektronik kart problemi</li>
+              <li><strong>Eşit Isıtmıyor:</strong> Fan motoru arızası veya ısı dağıtıcı sorunu</li>
+              <li><strong>Kapı Kapanmıyor:</strong> Menteşe arızası, cam contası veya yay sorunu</li>
+              <li><strong>Ses Yapıyor:</strong> Fan motoru, konveksiyon motoru veya döner tabla arızası</li>
+              <li><strong>Program Hatası:</strong> Elektronik kart, sensör veya kontrol paneli sorunu</li>
+              <li><strong>Gazlı Fırın:</strong> Ateşleme sistemi, termokupl veya gaz valfi arızası</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Arçelik</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Beko</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Vestel</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Samsung</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">LG</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Bosch</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Siemens</span>
+          </div>
+          <button class="seo-toggle-btn" onclick="toggleSeoSection('firin-seo')">📋 Tüm marka ve hizmet etiketlerini gör ▼</button>
+          <div class="service-seo-section" id="firin-seo">
+            <div class="seo-section-title"><i class="fas fa-tags"></i> Fırın Arama Etiketleri </div>
+            <div class="seo-tags-container">
+              <span class="seo-tag">Batman 19 Mayıs Fırın Servisi</span>
+              <span class="seo-tag">Batman Bağlar Fırın Servisi</span>
+              <span class="seo-tag">Batman Kayapınar Fırın Servisi</span>
+              <span class="seo-tag">Batman Yenişehir Fırın Servisi</span>
+              <span class="seo-tag">Batman Raman Fırın Servisi</span>
+              <span class="seo-tag">Batman Güneykent Fırın Servisi</span>
+              <span class="seo-tag">Batman Akyürek Fırın Servisi</span>
+              <span class="seo-tag">Batman Aydınlıkevler Fırın Servisi</span>
+              <span class="seo-tag">Batman Bahçelievler Fırın Servisi</span>
+              <span class="seo-tag">Batman Bayındır Fırın Servisi</span>
+              <span class="seo-tag">Batman Belde Fırın Servisi</span>
+              <span class="seo-tag">Batman Beşevler Fırın Servisi</span>
+              <span class="seo-tag">Batman Cudi Fırın Servisi</span>
+              <span class="seo-tag">Batman Cumhuriyet Fırın Servisi</span>
+              <span class="seo-tag">Batman Çamlıca Fırın Servisi</span>
+              <span class="seo-tag">Batman Çamlıtepe Fırın Servisi</span>
+              <span class="seo-tag">Batman Çarşı Fırın Servisi</span>
+              <span class="seo-tag">Batman Çay Fırın Servisi</span>
+              <span class="seo-tag">Batman Fatih Fırın Servisi</span>
+              <span class="seo-tag">Batman Gap Fırın Servisi</span>
+              <span class="seo-tag">Batman Girbereşik Fırın Servisi</span>
+              <span class="seo-tag">Batman Gültepe Fırın Servisi</span>
+              <span class="seo-tag">Batman Hilal Fırın Servisi</span>
+              <span class="seo-tag">Batman Huzur Fırın Servisi</span>
+              <span class="seo-tag">Batman Hürriyet Fırın Servisi</span>
+              <span class="seo-tag">Batman İluh Fırın Servisi</span>
+              <span class="seo-tag">Batman İrmi Fırın Servisi</span>
+              <span class="seo-tag">Batman Kardelen Fırın Servisi</span>
+              <span class="seo-tag">Batman Karşıyaka Fırın Servisi</span>
+              <span class="seo-tag">Batman Kısmet Fırın Servisi</span>
+              <span class="seo-tag">Batman Korik Fırın Servisi</span>
+              <span class="seo-tag">Batman Kültür Fırın Servisi</span>
+              <span class="seo-tag">Batman Meydan Fırın Servisi</span>
+              <span class="seo-tag">Batman Pazaryeri Fırın Servisi</span>
+              <span class="seo-tag">Batman Petrol Fırın Servisi</span>
+              <span class="seo-tag">Batman Petrolkent Fırın Servisi</span>
+              <span class="seo-tag">Batman Pınarbaşı Fırın Servisi</span>
+              <span class="seo-tag">Batman Sağlık Fırın Servisi</span>
+              <span class="seo-tag">Batman Segirkan Fırın Servisi</span>
+              <span class="seo-tag">Batman Seyitler Fırın Servisi</span>
+              <span class="seo-tag">Batman Seyrantepe Fırın Servisi</span>
+              <span class="seo-tag">Batman Site Fırın Servisi</span>
+              <span class="seo-tag">Batman Şafak Fırın Servisi</span>
+              <span class="seo-tag">Batman Şirin Evler Fırın Servisi</span>
+              <span class="seo-tag">Batman Tilmerç Fırın Servisi</span>
+              <span class="seo-tag">Batman Yeni Fırın Servisi</span>
+              <span class="seo-tag">Batman Yeniköy Fırın Servisi</span>
+              <span class="seo-tag">Batman Yenimahalle Fırın Servisi</span>
+              <span class="seo-tag">Batman Yeşiltepe Fırın Servisi</span>
+              <span class="seo-tag">Batman Ziyagökalp Fırın Servisi</span>
+            </div>
+            <button class="seo-toggle-btn secondary" onclick="toggleSeoSection('firin-seo')">Kapat ▲</button>
+          </div>
+          <a href="firin-tamiri-batman.html" class="service-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card anim anim-delay-1" id="sofben">
+          <div class="service-icon">🚿</div>
+          <h3>Şofben Tamiri</h3>
+          <div class="service-tags">
+            <span class="tag">Yanmıyor</span>
+            <span class="tag">Ateşleme</span>
+            <span class="tag">Brülör Arızası</span>
+            <span class="tag">Emniyet Sensörü</span>
+            <span class="tag">Su Kaçağı</span>
+            <span class="tag">Sıcak Su Yok</span>
+            <span class="tag">Pilot Ateş</span>
+            <span class="tag">Basınç Düşüklüğü</span>
+          </div>
+          <p>Şofbeniniz yanmıyor mu veya sıcak su gelmiyor mu? Ani ısıtıcı olarak bilinen şofbenler, sıcak su ihtiyacımızı anında karşılayan önemli cihazlardır. Doğalgaz ve LPG şofbenlerde oluşan tüm arızalara profesyonel müdahale ediyoruz. Ateşleme sistemi, brülör ve emniyet sensörü tamiri ile kalıcı çözüm sağlıyoruz.</p>
+          <div style="margin-top:16px;padding:16px;background:var(--bg-warm);border-radius:var(--radius);">
+            <h4 style="font-size:0.95rem;margin-bottom:10px;color:var(--primary);">Sık Karşılaşılan Arızalar</h4>
+            <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin:0;padding-left:18px;">
+              <li><strong>Yanmıyor:</strong> Ateşleme elektrodu, piezo düğmesi veya gaz valfi arızası</li>
+              <li><strong>Pilot Ateş Sönüyor:</strong> Termokupl, gaz regülatörü veya hava ayarı sorunu</li>
+              <li><strong>Sıcak Su Az:</strong> Su basıncı düşüklüğü, ısıtıcı boru tıkanıklığı veya çakmak taşı</li>
+              <li><strong>Su Kaçağı:</strong> Su bağlantıları, conta arızası veya kazan sorunu</li>
+              <li><strong>Ses Yapıyor:</strong> Brülör gürültüsü, su sesi veya boru titresimi</li>
+              <li><strong>Koku Yapıyor:</strong> Yanma tam olmaması, gaz kaçağı veya hava ayarı sorunu</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Arçelik</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Beko</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Vestel</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Samsung</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">LG</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Bosch</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Siemens</span>
+          </div>
+          <button class="seo-toggle-btn" onclick="toggleSeoSection('sofben-seo')">📋 Tüm marka ve hizmet etiketlerini gör ▼</button>
+          <div class="service-seo-section" id="sofben-seo">
+            <div class="seo-section-title"><i class="fas fa-tags"></i> Şofben Arama Etiketleri </div>
+            <div class="seo-tags-container">
+              <span class="seo-tag">Batman 19 Mayıs Şofben Servisi</span>
+              <span class="seo-tag">Batman Bağlar Şofben Servisi</span>
+              <span class="seo-tag">Batman Kayapınar Şofben Servisi</span>
+              <span class="seo-tag">Batman Yenişehir Şofben Servisi</span>
+              <span class="seo-tag">Batman Raman Şofben Servisi</span>
+              <span class="seo-tag">Batman Güneykent Şofben Servisi</span>
+              <span class="seo-tag">Batman Akyürek Şofben Servisi</span>
+              <span class="seo-tag">Batman Aydınlıkevler Şofben Servisi</span>
+              <span class="seo-tag">Batman Bahçelievler Şofben Servisi</span>
+              <span class="seo-tag">Batman Bayındır Şofben Servisi</span>
+              <span class="seo-tag">Batman Belde Şofben Servisi</span>
+              <span class="seo-tag">Batman Beşevler Şofben Servisi</span>
+              <span class="seo-tag">Batman Cudi Şofben Servisi</span>
+              <span class="seo-tag">Batman Cumhuriyet Şofben Servisi</span>
+              <span class="seo-tag">Batman Çamlıca Şofben Servisi</span>
+              <span class="seo-tag">Batman Çamlıtepe Şofben Servisi</span>
+              <span class="seo-tag">Batman Çarşı Şofben Servisi</span>
+              <span class="seo-tag">Batman Çay Şofben Servisi</span>
+              <span class="seo-tag">Batman Fatih Şofben Servisi</span>
+              <span class="seo-tag">Batman Gap Şofben Servisi</span>
+              <span class="seo-tag">Batman Girbereşik Şofben Servisi</span>
+              <span class="seo-tag">Batman Gültepe Şofben Servisi</span>
+              <span class="seo-tag">Batman Hilal Şofben Servisi</span>
+              <span class="seo-tag">Batman Huzur Şofben Servisi</span>
+              <span class="seo-tag">Batman Hürriyet Şofben Servisi</span>
+              <span class="seo-tag">Batman İluh Şofben Servisi</span>
+              <span class="seo-tag">Batman İrmi Şofben Servisi</span>
+              <span class="seo-tag">Batman Kardelen Şofben Servisi</span>
+              <span class="seo-tag">Batman Karşıyaka Şofben Servisi</span>
+              <span class="seo-tag">Batman Kısmet Şofben Servisi</span>
+              <span class="seo-tag">Batman Korik Şofben Servisi</span>
+              <span class="seo-tag">Batman Kültür Şofben Servisi</span>
+              <span class="seo-tag">Batman Meydan Şofben Servisi</span>
+              <span class="seo-tag">Batman Pazaryeri Şofben Servisi</span>
+              <span class="seo-tag">Batman Petrol Şofben Servisi</span>
+              <span class="seo-tag">Batman Petrolkent Şofben Servisi</span>
+              <span class="seo-tag">Batman Pınarbaşı Şofben Servisi</span>
+              <span class="seo-tag">Batman Sağlık Şofben Servisi</span>
+              <span class="seo-tag">Batman Segirkan Şofben Servisi</span>
+              <span class="seo-tag">Batman Seyitler Şofben Servisi</span>
+              <span class="seo-tag">Batman Seyrantepe Şofben Servisi</span>
+              <span class="seo-tag">Batman Site Şofben Servisi</span>
+              <span class="seo-tag">Batman Şafak Şofben Servisi</span>
+              <span class="seo-tag">Batman Şirin Evler Şofben Servisi</span>
+              <span class="seo-tag">Batman Tilmerç Şofben Servisi</span>
+              <span class="seo-tag">Batman Yeni Şofben Servisi</span>
+              <span class="seo-tag">Batman Yeniköy Şofben Servisi</span>
+              <span class="seo-tag">Batman Yenimahalle Şofben Servisi</span>
+              <span class="seo-tag">Batman Yeşiltepe Şofben Servisi</span>
+              <span class="seo-tag">Batman Ziyagökalp Şofben Servisi</span>
+            </div>
+            <button class="seo-toggle-btn secondary" onclick="toggleSeoSection('sofben-seo')">Kapat ▲</button>
+          </div>
+          <a href="sofben-tamiri-batman.html" class="service-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card anim anim-delay-2" id="klima">
+          <div class="service-icon">🌬️</div>
+          <h3>Klima Tamiri</h3>
+          <div class="service-tags">
+            <span class="tag">Soğutmuyor</span>
+            <span class="tag">Isıtmıyor</span>
+            <span class="tag">Gaz Dolumu</span>
+            <span class="tag">Su Akıyor</span>
+            <span class="tag">Ses Yapıyor</span>
+            <span class="tag">Koku Yapıyor</span>
+            <span class="tag">Kurulum</span>
+            <span class="tag">Bakım</span>
+          </div>
+          <p>Klimanız soğutmuyor, ısıtmıyor, su yapıyor veya ses yapyorsa uzman ekibimizle hızlı ve güvenilir klima tamiri hizmeti sunuyoruz. Özellikle yaz aylarında klima arızaları yaşam konforunu olumsuz etkiler. Klima bakım, onarım ve gaz dolumu işlemlerinin yanı sıra yeni klima kurulum hizmetlerimiz de mevcuttur. Tüm markalarda profesyonel servis hizmeti veriyoruz.</p>
+          <div style="margin-top:16px;padding:16px;background:var(--bg-warm);border-radius:var(--radius);">
+            <h4 style="font-size:0.95rem;margin-bottom:10px;color:var(--primary);">Sık Karşılaşılan Arızalar</h4>
+            <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin:0;padding-left:18px;">
+              <li><strong>Soğutmuyor:</strong> Gaz eksikliği, kompresör arızası veya filtre tıkanıklığı</li>
+              <li><strong>Isıtmıyor:</strong> Isı pompası arızası, dış ünite sorunu veya gaz kaçağı</li>
+              <li><strong>Su Akıyor:</strong> Drainaj hortumu tıkanıklığı, eğim sorunu veya boru bağlantısı</li>
+              <li><strong>Ses Yapıyor:</strong> Fan motoru, kompresör veya titreşim sorunu</li>
+              <li><strong>Koku Yapıyor:</strong> Filtre kirliliği, nem veya küf oluşumu</li>
+              <li><strong>Uzaktan Çalışmıyor:</strong> Kumanda pili, alıcı kartı veya iç ünite sensörü</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Arçelik</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Beko</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Vestel</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Samsung</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">LG</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Daikin</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Mitsubishi</span>
+          </div>
+          <button class="seo-toggle-btn" onclick="toggleSeoSection('klima-seo')">📋 Tüm marka ve hizmet etiketlerini gör ▼</button>
+          <div class="service-seo-section" id="klima-seo">
+            <div class="seo-section-title"><i class="fas fa-tags"></i> Klima Arama Etiketleri </div>
+            <div class="seo-tags-container">
+              <span class="seo-tag">Batman 19 Mayıs Klima Servisi</span>
+              <span class="seo-tag">Batman Bağlar Klima Servisi</span>
+              <span class="seo-tag">Batman Kayapınar Klima Servisi</span>
+              <span class="seo-tag">Batman Yenişehir Klima Servisi</span>
+              <span class="seo-tag">Batman Raman Klima Servisi</span>
+              <span class="seo-tag">Batman Güneykent Klima Servisi</span>
+              <span class="seo-tag">Batman Akyürek Klima Servisi</span>
+              <span class="seo-tag">Batman Aydınlıkevler Klima Servisi</span>
+              <span class="seo-tag">Batman Bahçelievler Klima Servisi</span>
+              <span class="seo-tag">Batman Bayındır Klima Servisi</span>
+              <span class="seo-tag">Batman Belde Klima Servisi</span>
+              <span class="seo-tag">Batman Beşevler Klima Servisi</span>
+              <span class="seo-tag">Batman Cudi Klima Servisi</span>
+              <span class="seo-tag">Batman Cumhuriyet Klima Servisi</span>
+              <span class="seo-tag">Batman Çamlıca Klima Servisi</span>
+              <span class="seo-tag">Batman Çamlıtepe Klima Servisi</span>
+              <span class="seo-tag">Batman Çarşı Klima Servisi</span>
+              <span class="seo-tag">Batman Çay Klima Servisi</span>
+              <span class="seo-tag">Batman Fatih Klima Servisi</span>
+              <span class="seo-tag">Batman Gap Klima Servisi</span>
+              <span class="seo-tag">Batman Girbereşik Klima Servisi</span>
+              <span class="seo-tag">Batman Gültepe Klima Servisi</span>
+              <span class="seo-tag">Batman Hilal Klima Servisi</span>
+              <span class="seo-tag">Batman Huzur Klima Servisi</span>
+              <span class="seo-tag">Batman Hürriyet Klima Servisi</span>
+              <span class="seo-tag">Batman İluh Klima Servisi</span>
+              <span class="seo-tag">Batman İrmi Klima Servisi</span>
+              <span class="seo-tag">Batman Kardelen Klima Servisi</span>
+              <span class="seo-tag">Batman Karşıyaka Klima Servisi</span>
+              <span class="seo-tag">Batman Kısmet Klima Servisi</span>
+              <span class="seo-tag">Batman Korik Klima Servisi</span>
+              <span class="seo-tag">Batman Kültür Klima Servisi</span>
+              <span class="seo-tag">Batman Meydan Klima Servisi</span>
+              <span class="seo-tag">Batman Pazaryeri Klima Servisi</span>
+              <span class="seo-tag">Batman Petrol Klima Servisi</span>
+              <span class="seo-tag">Batman Petrolkent Klima Servisi</span>
+              <span class="seo-tag">Batman Pınarbaşı Klima Servisi</span>
+              <span class="seo-tag">Batman Sağlık Klima Servisi</span>
+              <span class="seo-tag">Batman Segirkan Klima Servisi</span>
+              <span class="seo-tag">Batman Seyitler Klima Servisi</span>
+              <span class="seo-tag">Batman Seyrantepe Klima Servisi</span>
+              <span class="seo-tag">Batman Site Klima Servisi</span>
+              <span class="seo-tag">Batman Şafak Klima Servisi</span>
+              <span class="seo-tag">Batman Şirin Evler Klima Servisi</span>
+              <span class="seo-tag">Batman Tilmerç Klima Servisi</span>
+              <span class="seo-tag">Batman Yeni Klima Servisi</span>
+              <span class="seo-tag">Batman Yeniköy Klima Servisi</span>
+              <span class="seo-tag">Batman Yenimahalle Klima Servisi</span>
+              <span class="seo-tag">Batman Yeşiltepe Klima Servisi</span>
+              <span class="seo-tag">Batman Ziyagökalp Klima Servisi</span>
+            </div>
+            <button class="seo-toggle-btn secondary" onclick="toggleSeoSection('klima-seo')">Kapat ▲</button>
+          </div>
+          <a href="klima-tamiri-batman.html" class="service-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card anim anim-delay-3" id="kombi">
+          <div class="service-icon">🌡️</div>
+          <h3>Kombi Tamiri</h3>
+          <div class="service-tags">
+            <span class="tag">Çalışmıyor</span>
+            <span class="tag">Su Isıtmıyor</span>
+            <span class="tag">Arıza Lambası</span>
+            <span class="tag">Petekler Isınmıyor</span>
+            <span class="tag">Su Akıyor</span>
+            <span class="tag">Ses Yapıyor</span>
+            <span class="tag">Bakım</span>
+            <span class="tag">7/24 Servis</span>
+          </div>
+          <p>Kombi arızasında aynı gün çözüm garantisi sunuyoruz. Kış aylarında kombi arızaları yaşam konforunuzu olumsuz etkiler. Doğalgaz ve elektrikli kombi bakım, tamir ve değişim hizmetlerimizle Batman ve çevresinde sizlere hizmet vermekteyiz. Uzman teknisyen kadromuz tüm marka kombilerde profesyonel çözüm sunar. Periyodik bakım ile kombinizin ömrünü uzatıyoruz.</p>
+          <div style="margin-top:16px;padding:16px;background:var(--bg-warm);border-radius:var(--radius);">
+            <h4 style="font-size:0.95rem;margin-bottom:10px;color:var(--primary);">Sık Karşılaşılan Arızalar</h4>
+            <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin:0;padding-left:18px;">
+              <li><strong>Çalışmıyor:</strong> Gaz valfi, elektronik kart veya ateşleme sorunu</li>
+              <li><strong>Su Isıtmıyor:</strong> Heat exchanger (eşanjör) arızası, sensör sorunu veya çalışma modu</li>
+              <li><strong>Arıza Lambası Yanıyor:</strong> Hata kodu okuma, sensör arızası veya gaz basıncı sorunu</li>
+              <li><strong>Petekler Isınmıyor:</strong> Hava alma, pompa arızası veya vanasorunu</li>
+              <li><strong>Su Akıyor:</strong> Tahliye valfi, Conta veya eşanjör arızası</li>
+              <li><strong>Ses Yapıyor:</strong> Pompa, fan veya su sesi sorunları</li>
+              <li><strong>Su Basıncı Düşük:</strong> Su takviyesi, tahliye kaçağı veya genleşme tankı</li>
+            </ul>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Arçelik</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Beko</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Vestel</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Samsung</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">LG</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Bosch</span>
+            <span style="background:var(--surface);border:1px solid var(--border);padding:6px 10px;border-radius:var(--radius);font-size:0.75rem;">Viessmann</span>
+          </div>
+          <button class="seo-toggle-btn" onclick="toggleSeoSection('kombi-seo')">📋 Tüm marka ve hizmet etiketlerini gör ▼</button>
+          <div class="service-seo-section" id="kombi-seo">
+            <div class="seo-section-title"><i class="fas fa-tags"></i> Kombi Arama Etiketleri </div>
+            <div class="seo-tags-container">
+              <span class="seo-tag">Batman 19 Mayıs Kombi Servisi</span>
+              <span class="seo-tag">Batman Bağlar Kombi Servisi</span>
+              <span class="seo-tag">Batman Kayapınar Kombi Servisi</span>
+              <span class="seo-tag">Batman Yenişehir Kombi Servisi</span>
+              <span class="seo-tag">Batman Raman Kombi Servisi</span>
+              <span class="seo-tag">Batman Güneykent Kombi Servisi</span>
+              <span class="seo-tag">Batman Akyürek Kombi Servisi</span>
+              <span class="seo-tag">Batman Aydınlıkevler Kombi Servisi</span>
+              <span class="seo-tag">Batman Bahçelievler Kombi Servisi</span>
+              <span class="seo-tag">Batman Bayındır Kombi Servisi</span>
+              <span class="seo-tag">Batman Belde Kombi Servisi</span>
+              <span class="seo-tag">Batman Beşevler Kombi Servisi</span>
+              <span class="seo-tag">Batman Cudi Kombi Servisi</span>
+              <span class="seo-tag">Batman Cumhuriyet Kombi Servisi</span>
+              <span class="seo-tag">Batman Çamlıca Kombi Servisi</span>
+              <span class="seo-tag">Batman Çamlıtepe Kombi Servisi</span>
+              <span class="seo-tag">Batman Çarşı Kombi Servisi</span>
+              <span class="seo-tag">Batman Çay Kombi Servisi</span>
+              <span class="seo-tag">Batman Fatih Kombi Servisi</span>
+              <span class="seo-tag">Batman Gap Kombi Servisi</span>
+              <span class="seo-tag">Batman Girbereşik Kombi Servisi</span>
+              <span class="seo-tag">Batman Gültepe Kombi Servisi</span>
+              <span class="seo-tag">Batman Hilal Kombi Servisi</span>
+              <span class="seo-tag">Batman Huzur Kombi Servisi</span>
+              <span class="seo-tag">Batman Hürriyet Kombi Servisi</span>
+              <span class="seo-tag">Batman İluh Kombi Servisi</span>
+              <span class="seo-tag">Batman İrmi Kombi Servisi</span>
+              <span class="seo-tag">Batman Kardelen Kombi Servisi</span>
+              <span class="seo-tag">Batman Karşıyaka Kombi Servisi</span>
+              <span class="seo-tag">Batman Kısmet Kombi Servisi</span>
+              <span class="seo-tag">Batman Korik Kombi Servisi</span>
+              <span class="seo-tag">Batman Kültür Kombi Servisi</span>
+              <span class="seo-tag">Batman Meydan Kombi Servisi</span>
+              <span class="seo-tag">Batman Pazaryeri Kombi Servisi</span>
+              <span class="seo-tag">Batman Petrol Kombi Servisi</span>
+              <span class="seo-tag">Batman Petrolkent Kombi Servisi</span>
+              <span class="seo-tag">Batman Pınarbaşı Kombi Servisi</span>
+              <span class="seo-tag">Batman Sağlık Kombi Servisi</span>
+              <span class="seo-tag">Batman Segirkan Kombi Servisi</span>
+              <span class="seo-tag">Batman Seyitler Kombi Servisi</span>
+              <span class="seo-tag">Batman Seyrantepe Kombi Servisi</span>
+              <span class="seo-tag">Batman Site Kombi Servisi</span>
+              <span class="seo-tag">Batman Şafak Kombi Servisi</span>
+              <span class="seo-tag">Batman Şirin Evler Kombi Servisi</span>
+              <span class="seo-tag">Batman Tilmerç Kombi Servisi</span>
+              <span class="seo-tag">Batman Yeni Kombi Servisi</span>
+              <span class="seo-tag">Batman Yeniköy Kombi Servisi</span>
+              <span class="seo-tag">Batman Yenimahalle Kombi Servisi</span>
+              <span class="seo-tag">Batman Yeşiltepe Kombi Servisi</span>
+              <span class="seo-tag">Batman Ziyagökalp Kombi Servisi</span>
+            </div>
+            <button class="seo-toggle-btn secondary" onclick="toggleSeoSection('kombi-seo')">Kapat ▲</button>
+          </div>
+          <a href="kombi-tamiri-batman.html" class="service-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--bg-warm);padding:80px 0;">
+    <div class="container section-inner">
+      <div class="section-header anim">
+        <div class="section-tag">Neden Bizi Tercih Etmelisiniz?</div>
+        <h2>Batman'da En Güvenilir Beyaz Eşya Servisi</h2>
+      </div>
+      <div class="features-list">
+        <div class="feature-item anim">
+          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+          <div><h4>Aynı Gün Servis Garantisi</h4><p>Arıza bildirimi aldıktan sonra en kısa sürede adresinize ulaşıyoruz. Batman'da hızlı çözüm bizim önceliğimiz.</p></div>
+        </div>
+        <div class="feature-item anim anim-delay-1">
+          <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+          <div><h4>Orijinal Yedek Parça Garantisi</h4><p>Tamirlerimizde yalnızca orijinal ve sertifikalı yedek parça kullanıyoruz. Tüm işlemlerimizde garanti belgesi sunuyoruz.</p></div>
+        </div>
+        <div class="feature-item anim anim-delay-2">
+          <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+          <div><h4>Uzman & Sertifikalı Teknisyen</h4><p>Deneyimli ve sertifikalı teknisyenlerimiz tüm marka ve model beyaz eşyalarda uzman tamir hizmeti sunar.</p></div>
+        </div>
+        <div class="feature-item anim anim-delay-3">
+          <div class="feature-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+          <div><h4>Uygun Fiyat & Şeffaf Ücretlendirme</h4><p>Yerinde net fiyat teklifi sunuyoruz. Gizli maliyet yok, sürpriz fatura yok.</p></div>
+        </div>
+        <div class="feature-item anim">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <div><h4>7/24 Müşteri Desteği</h4><p>Haftanın 7 günü, günün 24 saati telefonla ve WhatsApp ile ulaşabilirsiniz. Acil durumlarda yanınızdayız.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" style="padding:80px 0;">
+    <div class="container section-inner">
+      <div class="section-header anim">
+        <div class="section-tag">Sorularınız İçin</div>
+        <h2>Sıkça Sorulan Sorular</h2>
+      </div>
+      <div class="faq-list anim">
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)"><i class="fas fa-circle-question"></i> Hizmet talebinde bulunmak için ne yapmalıyım?</button><div class="faq-answer">Telefon edin (0537 447 16 39), WhatsApp üzerinden mesaj gönderin veya iletişim formunu doldurun. En kısa sürede sizi arayalım.</div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)"><i class="fas fa-circle-question"></i> Aynı gün servis garantisi nasıl çalışır?</button><div class="faq-answer">İlçe ve mahalleye göre 30-60 dakika içinde adresinize ulaşıyoruz. Bazı durumlarda aynı gün içinde tamir tamamlanır.</div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)"><i class="fas fa-circle-question"></i> Fiyatlar ne kadar ve nasıl belirleniyor?</button><div class="faq-answer">Fiyatlar arıza türüne, cihaz markası ve modeline göre değişir. Yerinde net fiyat teklifi sunuyoruz.</div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)"><i class="fas fa-circle-question"></i> Hangi marka ve modellerde tamir yapıyorsunuz?</button><div class="faq-answer">Tüm marka ve modellerde tamir hizmeti sunuyoruz. Arçelik, Beko, Vestel, Samsung, LG, Bosch, Siemens, Profilo, Indesit ve daha fazlası.</div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)"><i class="fas fa-circle-question"></i> Garanti belgesi veriyor musunuz?</button><div class="faq-answer">Evet, tüm tamir işlemlerimizde orijinal parça kullanımı ve garanti belgesi sunuyoruz.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.12!2d41.1500!3d37.8860!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400d9f61a5c5b1b1%3A0xabcdef1234567890!2sRaman%20Cd.%2C%20Batman%2C%20T%C3%BCrkiye!5e0!3m2!1str!2str!4v1680000000000!5m2!1str!2str" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Batman Beyaz Eşya Konumu" style="width:100%;height:380px;border:none;display:block;"></iframe>
+  </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+              <div class="logo-text">
+                <strong>Batman Beyaz Eşya</strong>
+                <span>Teknik Servis</span>
+              </div>
+            </a>
+          </div>
+          <p class="footer-desc">Batman'da beyaz eşya tamiri hizmetinde 10+ yıllık deneyim kadromuzla her marka, her modelde profesyonel çözüm sunuyoruz.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/905374471639" target="_blank" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+905374471639" class="social-btn" title="Telefon"><i class="fas fa-phone"></i></a>
+            <a href="https://www.instagram.com/muratmedyareklam/" target="_blank" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Hizmetlerimiz</h4>
+          <ul class="footer-links">
+            <li><a href="hizmetlerimiz.html#camasir"><i class="fas fa-chevron-right"></i>Çamaşır Makinesi</a></li>
+            <li><a href="hizmetlerimiz.html#bulasik"><i class="fas fa-chevron-right"></i>Bulaşık Makinesi</a></li>
+            <li><a href="hizmetlerimiz.html#buzdolabi"><i class="fas fa-chevron-right"></i>Buzdolabı</a></li>
+            <li><a href="hizmetlerimiz.html#dondurucu"><i class="fas fa-chevron-right"></i>Derin Dondurucu</a></li>
+            <li><a href="hizmetlerimiz.html#firin"><i class="fas fa-chevron-right"></i>Fırın</a></li>
+            <li><a href="hizmetlerimiz.html#sofben"><i class="fas fa-chevron-right"></i>Şofben</a></li>
+            <li><a href="hizmetlerimiz.html#klima"><i class="fas fa-chevron-right"></i>Klima</a></li>
+            <li><a href="hizmetlerimiz.html#kombi"><i class="fas fa-chevron-right"></i>Kombi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sayfalar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i>Ana Sayfa</a></li>
+            <li><a href="hizmetlerimiz.html"><i class="fas fa-chevron-right"></i>Hizmetlerimiz</a></li>
+            <li><a href="hakkimizda.html"><i class="fas fa-chevron-right"></i>Hakkımızda</a></li>
+            <li><a href="blog.html"><i class="fas fa-chevron-right"></i>Blog</a></li>
+            <li><a href="hizmet-bolgelerimiz.html"><i class="fas fa-chevron-right"></i>Hizmet Bölgelerimiz</a></li>
+            <li><a href="iletisim.html"><i class="fas fa-chevron-right"></i>İletişim</a></li>
+            <li><a href="gizlilik-politikasi.html"><i class="fas fa-chevron-right"></i>Gizlilik Politikası</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>İletişim</h4>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-map-marker-alt"></i><span>Yeni, Raman Cd. No:43 D:B, 72070 Batman</span></li>
+            <li><i class="fas fa-phone"></i><a href="tel:+905374471639">0537 447 16 39</a></li>
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/905374471639" target="_blank">WhatsApp İletişim</a></li>
+            
+            <li><i class="fas fa-clock"></i><span>08:00–23:00 Her Gün</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Batman Beyaz Eşya Tamir Teknik Özel Servis</span>
+        <a href="https://www.instagram.com/muratmedyareklam/" target="_blank" class="murat-badge"><i class="fab fa-instagram"></i> muratmedyareklam</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-buttons">
+    <div class="float-item"><span class="float-label">AI Asistan</span><button class="float-btn float-ai" onclick="openAIChat()"><i class="fas fa-robot"></i></button></div>
+    <div class="float-item"><span class="float-label">Telefon Et</span><a href="tel:+905374471639" class="float-btn float-tel"><i class="fas fa-phone"></i></a></div>
+    <div class="float-item"><span class="float-label">WhatsApp</span><a href="https://wa.me/905374471639?text=Merhaba,%20beyaz%20eşya%20tamiri%20için%20bilgi%20almak%20istiyorum." class="float-btn float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+  </div>
+
+  <div class="ai-chat-overlay" id="aiChatOverlay">
+    <div class="ai-chat-box">
+      <div class="ai-chat-header">
+        <div class="ai-avatar"><i class="fas fa-robot"></i></div>
+        <div><h4>Batman Beyaz Eşya Asistanı <span class="ai-online"></span></h4><p>Nasıl yardımcı olabilirim?</p></div>
+        <button class="ai-close" onclick="closeAIChat()"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="ai-messages" id="aiMessages"><div class="msg bot">👋 Merhaba! Batman Beyaz Eşya Tamir'in dijital asistanıyım. Nasıl yardımcı olabilirim?</div></div>
+      <div class="ai-chips">
+        <button class="chip-btn" onclick="askChip('Çamaşır makinesi tamiri yapıyor musunuz?')">🫧 Çamaşır Mak.</button>
+        <button class="chip-btn" onclick="askChip('Bulaşık makinesi tamiri yapıyor musunuz?')">🍽️ Bulaşık Mak.</button>
+        <button class="chip-btn" onclick="askChip('Buzdolabı tamiri fiyatı nedir?')">🧊 Buzdolabı</button>
+        <button class="chip-btn" onclick="askChip('Derin dondurucu tamiri yapıyor musunuz?')">❄️ Derin Dondurucu</button>
+        <button class="chip-btn" onclick="askChip('Fırın tamiri yapıyor musunuz?')">🍕 Fırın</button>
+        <button class="chip-btn" onclick="askChip('Şofben tamiri yapıyor musunuz?')">🚿 Şofben</button>
+        <button class="chip-btn" onclick="askChip('Klima tamiri yapıyor musunuz?')">❄️ Klima</button>
+        <button class="chip-btn" onclick="askChip('Kombi tamiri yapıyor musunuz?')">🔥 Kombi</button>
+      </div>
+      <div class="ai-input-area">
+        <input class="ai-input" id="aiInput" type="text" placeholder="Sorunuzu yazın..." onkeydown="if(event.key==='Enter')sendMsg()" />
+        <button class="ai-send" onclick="sendMsg()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function toggleSeoSection(id){var s=document.getElementById(id);var b=s.previousElementSibling.querySelector(".seo-toggle-btn");s.classList.toggle("open");b.textContent=s.classList.contains("open")?"Daha az göster ▲":"Tüm marka ve hizmet etiketlerini gör ▼"}
+  function toggleFaq(b){var i=b.parentElement;var w=i.classList.contains('active');document.querySelectorAll('.faq-item').forEach(function(e){e.classList.remove('active')});if(!w)i.classList.add('active')}
+  function toggleMobileNav(){document.getElementById('mobileNav').classList.toggle('open')}
+  function handleFormSubmit(b){alert('Mesajınız alındı!');var f=b.closest('div');if(f)f.querySelectorAll('input,textarea,select').forEach(function(e){e.value='';if(e.tagName==='SELECT')e.selectedIndex=0})}
+  function handleFormSelect(s){console.log('Hizmet seçildi: '+s.value)}
+  function openAIChat(){document.getElementById('aiChatOverlay').classList.add('open')}
+  function closeAIChat(){document.getElementById('aiChatOverlay').classList.remove('open')}
+  var responses={camasir:"Çamaşır makinesi tamiri hizmetimiz mevcuttur. ☎️ 0537 447 16 39",bulasik:"Bulaşık makinesi tamiri yapıyoruz. ☎️ 0537 447 16 39",buzdolabi:"Buzdolabı tamir ve bakım hizmetimiz mevcut. ☎️ 0537 447 16 39",dondurucu:"Derin dondurucu arızaları için hızlı servis. ☎️ 0537 447 16 39",firin:"Fırın tamiri yapıyoruz. ☎️ 0537 447 16 39",sofben:"Şofben tamiri hizmetimiz mevcuttur. ☎️ 0537 447 16 39",fiyat:"Fiyatlar arıza türüne göre değişir. Bizi arayın.",iletisim:"☎️ 0537 447 16 39\n📍 Yeni, Raman Cd. No:43 D:B Batman",klima:"Klima tamiri ve bakım hizmeti sunuyoruz. ☎️ 0537 447 16 39",kombi:"Kombi tamiri hizmetimiz mevcuttur. ☎️ 0537 447 16 39",merhaba:"Merhaba! Nasıl yardımcı olabilirim?"};
+  function getAIResponse(t){var e=t.toLowerCase();if(e.includes('çamaşır')||e.includes('camasir'))return responses.camasir;if(e.includes('bulaşık')||e.includes('bulasik'))return responses.bulasik;if(e.includes('buzdolabı')||e.includes('buzdolabi'))return responses.buzdolabi;if(e.includes('dondurucu')||e.includes('dondurc'))return responses.dondurucu;if(e.includes('fırın')||e.includes('firin'))return responses.firin;if(e.includes('şofben')||e.includes('sofben'))return responses.sofben;if(e.includes('fiyat')||e.includes('ücret'))return responses.fiyat;if(e.includes('iletişim')||e.includes('telefon'))return responses.iletisim;if(e.includes('klima'))return responses.klima;if(e.includes('kombi'))return responses.kombi;if(e.includes('merhaba')||e.includes('selam'))return responses.merhaba;return "Sorunuzu aldım! Detaylı bilgi için ☎️ 0537 447 16 39.";}
+  function addMsg(t,e){var a=document.createElement('div');a.className='msg '+e;a.textContent=t;var o=document.getElementById('aiMessages');o.appendChild(a);o.scrollTop=o.scrollHeight;}
+  function sendMsg(){var t=document.getElementById('aiInput'),e=t.value.trim();if(!e)return;addMsg(e,'user');t.value='';setTimeout(function(){addMsg(getAIResponse(e),'bot')},700)}
+  function askChip(t){document.getElementById('aiInput').value=t;sendMsg()}
+  document.addEventListener('DOMContentLoaded',function(){document.getElementById('aiChatOverlay').addEventListener('click',function(e){if(e.target===this)closeAIChat()});var t=document.getElementById('scrollTop');if(t)window.addEventListener('scroll',function(){window.scrollY>400?t.classList.add('visible'):t.classList.remove('visible')});if('IntersectionObserver' in window){var e=new IntersectionObserver(function(t){t.forEach(function(t){if(t.isIntersecting){t.target.classList.add('visible');e.unobserve(t.target)}})},{threshold:0.1,rootMargin:'0px 0px -60px 0px'});document.querySelectorAll('.anim').forEach(function(t){e.observe(t)})}else{document.querySelectorAll('.anim').forEach(function(t){t.classList.add('visible')})}});
+  </script>
+</body>
+</html>
